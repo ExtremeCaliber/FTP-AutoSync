@@ -14,4 +14,5 @@ C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\refint\FTP Aut
 C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.pdb
 C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.genruntimeconfig.cache
 C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\ref\FTP AutoSync.dll
-C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.FtpClient.resources
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.Form1.resources
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.Properties.Resources.resources
