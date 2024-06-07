@@ -1,0 +1,17 @@
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.exe
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.deps.json
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.runtimeconfig.json
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.pdb
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.csproj.GenerateResource.cache
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.AssemblyInfoInputs.cache
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.AssemblyInfo.cs
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.csproj.CoreCompileInputs.cache
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.sourcelink.json
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.dll
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\refint\FTP AutoSync.dll
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.pdb
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.genruntimeconfig.cache
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\ref\FTP AutoSync.dll
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.FtpClient.resources
