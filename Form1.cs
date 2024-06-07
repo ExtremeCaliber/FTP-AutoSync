@@ -1,10 +1,8 @@
 namespace FTP_AutoSync
 {
-    public partial class Form1 : Form
+   
+    public class FtpClient
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
     }
 }
