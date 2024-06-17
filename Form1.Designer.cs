@@ -47,6 +47,8 @@
             cmbLocal = new ComboBox();
             btnConnect = new Button();
             picCSU = new PictureBox();
+            TreeViewFTP = new TreeView();
+            listBox1 = new ListBox();
             ((System.ComponentModel.ISupportInitialize)picCSU).BeginInit();
             SuspendLayout();
             // 
@@ -56,6 +58,7 @@
             InHostIP.Name = "InHostIP";
             InHostIP.Size = new Size(119, 23);
             InHostIP.TabIndex = 0;
+            InHostIP.TextChanged += InHostIP_TextChanged;
             // 
             // lblUsername
             // 
@@ -81,6 +84,7 @@
             InUser.Name = "InUser";
             InUser.Size = new Size(119, 23);
             InUser.TabIndex = 2;
+            InUser.TextChanged += InUser_TextChanged;
             // 
             // lblHostIP
             // 
@@ -97,6 +101,7 @@
             InPass.Name = "InPass";
             InPass.Size = new Size(119, 23);
             InPass.TabIndex = 4;
+            InPass.TextChanged += InPass_TextChanged;
             // 
             // lblPort
             // 
@@ -113,6 +118,7 @@
             InPort.Name = "InPort";
             InPort.Size = new Size(119, 23);
             InPort.TabIndex = 6;
+            InPort.TextChanged += InPort_TextChanged;
             // 
             // lblTarget
             // 
@@ -200,6 +206,7 @@
             btnConnect.TabIndex = 17;
             btnConnect.Text = "Connect";
             btnConnect.UseVisualStyleBackColor = true;
+            btnConnect.Click += btnConnect_Click;
             // 
             // picCSU
             // 
@@ -211,11 +218,30 @@
             picCSU.TabIndex = 18;
             picCSU.TabStop = false;
             // 
+            // TreeViewFTP
+            // 
+            TreeViewFTP.Location = new Point(148, 138);
+            TreeViewFTP.Name = "TreeViewFTP";
+            TreeViewFTP.Size = new Size(324, 81);
+            TreeViewFTP.TabIndex = 19;
+            TreeViewFTP.AfterSelect += TreeViewFTP_AfterSelect;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(102, 300);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(120, 94);
+            listBox1.TabIndex = 20;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(656, 507);
+            Controls.Add(listBox1);
+            Controls.Add(TreeViewFTP);
             Controls.Add(picCSU);
             Controls.Add(btnConnect);
             Controls.Add(cmbLocal);
@@ -263,5 +289,7 @@
         private ComboBox cmbLocal;
         private Button btnConnect;
         private PictureBox picCSU;
+        private TreeView TreeViewFTP;
+        private ListBox listBox1;
     }
 }

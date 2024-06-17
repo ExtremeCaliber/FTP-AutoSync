@@ -16,3 +16,15 @@ C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.g
 C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\ref\FTP AutoSync.dll
 C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.Form1.resources
 C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.Properties.Resources.resources
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.csproj.AssemblyReference.cache
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FluentFTP.dll
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP Auto.793FBC34.Up2Date
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FluentFTP.Logging.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
