@@ -1,4 +1,5 @@
-﻿namespace FTP_AutoSync
+using System.Windows.Forms;
+namespace FTP_AutoSync
 {
     partial class Form1
     {
