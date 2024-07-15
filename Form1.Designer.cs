@@ -1,5 +1,4 @@
-using System.Windows.Forms;
-namespace FTP_AutoSync
+﻿namespace FTP_AutoSync
 {
     partial class Form1
     {
@@ -230,12 +229,12 @@ namespace FTP_AutoSync
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.CSULOGO;
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Image = Properties.Resources.CSULOGO1;
+            pictureBox1.Location = new Point(1, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(161, 106);
+            pictureBox1.Size = new Size(205, 117);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 23;
+            pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // Form1

@@ -1,5 +1,3 @@
-using System;
-using System.Windows.Forms;
 namespace FTP_AutoSync
 {
     internal static class Program
