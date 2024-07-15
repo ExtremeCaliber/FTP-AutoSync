@@ -76,8 +76,12 @@ namespace FTP_AutoSync
 
             try
             {
-                using var client = new FtpClient(host, user, pass);
-
+                using FtpClient client = new FtpClient(host, user, pass);
+                // create Serilog logger
+                var serilogLogger = new LoggerConfiguration()
+                    .MinimumLevel.Debug()
+                    .WriteTo.File("logs/FluentFTPLogs.txt", rollingInterval: RollingInterval.Day)
+                    .CreateLogger();
 
 
                 client.Config.CustomStream = typeof(GnuTlsStream);
