@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "H+WModfMR1I=",
+  "dgSpecHash": "34tCxA5UIoo=",
   "success": true,
   "projectFilePath": "C:\\Users\\excal\\source\\repos\\FTP AutoSync\\FTP AutoSync.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\excal\\.nuget\\packages\\fluentftp\\50.0.1\\fluentftp.50.0.1.nupkg.sha512",
+    "C:\\Users\\excal\\.nuget\\packages\\fluentftp\\50.1.0\\fluentftp.50.1.0.nupkg.sha512",
+    "C:\\Users\\excal\\.nuget\\packages\\fluentftp.gnutls\\1.0.31\\fluentftp.gnutls.1.0.31.nupkg.sha512",
     "C:\\Users\\excal\\.nuget\\packages\\fluentftp.logging\\1.0.0\\fluentftp.logging.1.0.0.nupkg.sha512",
     "C:\\Users\\excal\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.0\\microsoft.extensions.configuration.2.1.0.nupkg.sha512",
     "C:\\Users\\excal\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.1.0\\microsoft.extensions.configuration.abstractions.2.1.0.nupkg.sha512",
@@ -14,6 +15,8 @@
     "C:\\Users\\excal\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.1.0\\microsoft.extensions.logging.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\excal\\.nuget\\packages\\microsoft.extensions.options\\2.1.0\\microsoft.extensions.options.2.1.0.nupkg.sha512",
     "C:\\Users\\excal\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.0\\microsoft.extensions.primitives.2.1.0.nupkg.sha512",
+    "C:\\Users\\excal\\.nuget\\packages\\serilog\\4.0.0\\serilog.4.0.0.nupkg.sha512",
+    "C:\\Users\\excal\\.nuget\\packages\\serilog.sinks.console\\6.0.0\\serilog.sinks.console.6.0.0.nupkg.sha512",
     "C:\\Users\\excal\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
     "C:\\Users\\excal\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
   ],

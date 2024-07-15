@@ -47,11 +47,23 @@
           "dependencies": {
             "FluentFTP": {
               "target": "Package",
-              "version": "[50.0.1, )"
+              "version": "[50.1.0, )"
+            },
+            "FluentFTP.GnuTLS": {
+              "target": "Package",
+              "version": "[1.0.31, )"
             },
             "FluentFTP.Logging": {
               "target": "Package",
               "version": "[1.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

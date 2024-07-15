@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
-      "FluentFTP/50.0.1": {
+      "FluentFTP/50.1.0": {
         "type": "package",
         "compile": {
           "lib/net6.0/FluentFTP.dll": {
@@ -13,6 +13,25 @@
           "lib/net6.0/FluentFTP.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FluentFTP.GnuTLS/1.0.31": {
+        "type": "package",
+        "dependencies": {
+          "FluentFTP": "48.0.3"
+        },
+        "compile": {
+          "lib/net6.0/FluentFTP.GnuTLS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentFTP.GnuTLS.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/FluentFTP.GnuTLS.targets": {}
         }
       },
       "FluentFTP.Logging/1.0.0": {
@@ -155,6 +174,35 @@
           }
         }
       },
+      "Serilog/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Serilog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Serilog.Sinks.Console/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Serilog.Sinks.Console.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Sinks.Console.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Memory/4.5.0": {
         "type": "package",
         "compile": {
@@ -180,15 +228,15 @@
     }
   },
   "libraries": {
-    "FluentFTP/50.0.1": {
-      "sha512": "iNG+wYZcBoOQmnrgR0EzUU1KHy3mOG/osGcd+bZMDcTC45tTLR45o0uInKd74t669d1JhGHBTzZKpSQOxBSisg==",
+    "FluentFTP/50.1.0": {
+      "sha512": "x5O6gntyV6OcwA7TOpwl15sw4k8Doe8HDej952WH/UKy7L9pJXxVaIfpcd/NllRrynW3rdmeObA7Ut3UPE1JPg==",
       "type": "package",
-      "path": "fluentftp/50.0.1",
+      "path": "fluentftp/50.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
-        "fluentftp.50.0.1.nupkg.sha512",
+        "fluentftp.50.1.0.nupkg.sha512",
         "fluentftp.nuspec",
         "lib/net462/FluentFTP.dll",
         "lib/net462/FluentFTP.xml",
@@ -202,6 +250,44 @@
         "lib/netstandard2.0/FluentFTP.xml",
         "lib/netstandard2.1/FluentFTP.dll",
         "lib/netstandard2.1/FluentFTP.xml",
+        "logo-nuget.png"
+      ]
+    },
+    "FluentFTP.GnuTLS/1.0.31": {
+      "sha512": "vlEI3jxTHxQ7DbskQSM+l0elsQU92eTWAloooKh0IO+IgDq2vU8T+pKIpLXKeP+vuEpVrKjq/mmUnTlR7CypoA==",
+      "type": "package",
+      "path": "fluentftp.gnutls/1.0.31",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/FluentFTP.GnuTLS.targets",
+        "content/libgcc_s_seh-1.dll",
+        "content/libgmp-10.dll",
+        "content/libgnutls-30.dll",
+        "content/libhogweed-6.dll",
+        "content/libnettle-8.dll",
+        "content/libwinpthread-1.dll",
+        "contentFiles/libgcc_s_seh-1.dll",
+        "contentFiles/libgmp-10.dll",
+        "contentFiles/libgnutls-30.dll",
+        "contentFiles/libhogweed-6.dll",
+        "contentFiles/libnettle-8.dll",
+        "contentFiles/libwinpthread-1.dll",
+        "fluentftp.gnutls.1.0.31.nupkg.sha512",
+        "fluentftp.gnutls.nuspec",
+        "lib/net462/FluentFTP.GnuTLS.dll",
+        "lib/net462/FluentFTP.GnuTLS.xml",
+        "lib/net472/FluentFTP.GnuTLS.dll",
+        "lib/net472/FluentFTP.GnuTLS.xml",
+        "lib/net5.0/FluentFTP.GnuTLS.dll",
+        "lib/net5.0/FluentFTP.GnuTLS.xml",
+        "lib/net6.0/FluentFTP.GnuTLS.dll",
+        "lib/net6.0/FluentFTP.GnuTLS.xml",
+        "lib/netstandard2.0/FluentFTP.GnuTLS.dll",
+        "lib/netstandard2.0/FluentFTP.GnuTLS.xml",
+        "lib/netstandard2.1/FluentFTP.GnuTLS.dll",
+        "lib/netstandard2.1/FluentFTP.GnuTLS.xml",
         "logo-nuget.png"
       ]
     },
@@ -324,6 +410,52 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
+    "Serilog/4.0.0": {
+      "sha512": "2jDkUrSh5EofOp7Lx5Zgy0EB+7hXjjxE2ktTb1WVQmU00lDACR2TdROGKU0K1pDTBSJBN1PqgYpgOZF8mL7NJw==",
+      "type": "package",
+      "path": "serilog/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net462/Serilog.dll",
+        "lib/net462/Serilog.xml",
+        "lib/net471/Serilog.dll",
+        "lib/net471/Serilog.xml",
+        "lib/net6.0/Serilog.dll",
+        "lib/net6.0/Serilog.xml",
+        "lib/net8.0/Serilog.dll",
+        "lib/net8.0/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "serilog.4.0.0.nupkg.sha512",
+        "serilog.nuspec"
+      ]
+    },
+    "Serilog.Sinks.Console/6.0.0": {
+      "sha512": "fQGWqVMClCP2yEyTXPIinSr5c+CBGUvBybPxjAGcf7ctDhadFhrQw03Mv8rJ07/wR5PDfFjewf2LimvXCDzpbA==",
+      "type": "package",
+      "path": "serilog.sinks.console/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net462/Serilog.Sinks.Console.dll",
+        "lib/net462/Serilog.Sinks.Console.xml",
+        "lib/net471/Serilog.Sinks.Console.dll",
+        "lib/net471/Serilog.Sinks.Console.xml",
+        "lib/net6.0/Serilog.Sinks.Console.dll",
+        "lib/net6.0/Serilog.Sinks.Console.xml",
+        "lib/net8.0/Serilog.Sinks.Console.dll",
+        "lib/net8.0/Serilog.Sinks.Console.xml",
+        "lib/netstandard2.0/Serilog.Sinks.Console.dll",
+        "lib/netstandard2.0/Serilog.Sinks.Console.xml",
+        "serilog.sinks.console.6.0.0.nupkg.sha512",
+        "serilog.sinks.console.nuspec"
+      ]
+    },
     "System.Memory/4.5.0": {
       "sha512": "m0psCSpUxTGfvwyO0i03ajXVhgBqyXlibXz0Mo1dtKGjaHrXFLnuQ8rNBTmWRqbfRjr4eC6Wah4X5FfuFDu5og==",
       "type": "package",
@@ -393,8 +525,11 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "FluentFTP >= 50.0.1",
-      "FluentFTP.Logging >= 1.0.0"
+      "FluentFTP >= 50.1.0",
+      "FluentFTP.GnuTLS >= 1.0.31",
+      "FluentFTP.Logging >= 1.0.0",
+      "Serilog >= 4.0.0",
+      "Serilog.Sinks.Console >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -443,11 +578,23 @@
         "dependencies": {
           "FluentFTP": {
             "target": "Package",
-            "version": "[50.0.1, )"
+            "version": "[50.1.0, )"
+          },
+          "FluentFTP.GnuTLS": {
+            "target": "Package",
+            "version": "[1.0.31, )"
           },
           "FluentFTP.Logging": {
             "target": "Package",
             "version": "[1.0.0, )"
+          },
+          "Serilog": {
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
+          "Serilog.Sinks.Console": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           }
         },
         "imports": [

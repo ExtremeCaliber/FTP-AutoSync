@@ -28,3 +28,12 @@ C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Exte
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libgcc_s_seh-1.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libgmp-10.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libgnutls-30.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libhogweed-6.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libnettle-8.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libwinpthread-1.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FluentFTP.GnuTLS.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Serilog.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Serilog.Sinks.Console.dll

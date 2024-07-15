@@ -46,15 +46,15 @@
             btnBrowseLocal = new Button();
             cmbLocal = new ComboBox();
             btnConnect = new Button();
-            picCSU = new PictureBox();
-            TreeViewFTP = new TreeView();
-            listBox1 = new ListBox();
-            ((System.ComponentModel.ISupportInitialize)picCSU).BeginInit();
+            comboBox1 = new ComboBox();
+            button1 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // InHostIP
             // 
-            InHostIP.Location = new Point(22, 109);
+            InHostIP.Location = new Point(36, 152);
             InHostIP.Name = "InHostIP";
             InHostIP.Size = new Size(119, 23);
             InHostIP.TabIndex = 0;
@@ -63,7 +63,7 @@
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.Location = new Point(175, 91);
+            lblUsername.Location = new Point(189, 134);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(60, 15);
             lblUsername.TabIndex = 1;
@@ -72,7 +72,7 @@
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(296, 91);
+            lblPassword.Location = new Point(310, 134);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(57, 15);
             lblPassword.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             // InUser
             // 
-            InUser.Location = new Point(148, 109);
+            InUser.Location = new Point(162, 152);
             InUser.Name = "InUser";
             InUser.Size = new Size(119, 23);
             InUser.TabIndex = 2;
@@ -89,7 +89,7 @@
             // lblHostIP
             // 
             lblHostIP.AutoSize = true;
-            lblHostIP.Location = new Point(57, 91);
+            lblHostIP.Location = new Point(71, 134);
             lblHostIP.Name = "lblHostIP";
             lblHostIP.Size = new Size(45, 15);
             lblHostIP.TabIndex = 5;
@@ -97,7 +97,7 @@
             // 
             // InPass
             // 
-            InPass.Location = new Point(273, 109);
+            InPass.Location = new Point(287, 152);
             InPass.Name = "InPass";
             InPass.Size = new Size(119, 23);
             InPass.TabIndex = 4;
@@ -106,7 +106,7 @@
             // lblPort
             // 
             lblPort.AutoSize = true;
-            lblPort.Location = new Point(443, 91);
+            lblPort.Location = new Point(457, 134);
             lblPort.Name = "lblPort";
             lblPort.Size = new Size(29, 15);
             lblPort.TabIndex = 7;
@@ -114,7 +114,7 @@
             // 
             // InPort
             // 
-            InPort.Location = new Point(398, 109);
+            InPort.Location = new Point(412, 152);
             InPort.Name = "InPort";
             InPort.Size = new Size(119, 23);
             InPort.TabIndex = 6;
@@ -123,7 +123,7 @@
             // lblTarget
             // 
             lblTarget.AutoSize = true;
-            lblTarget.Location = new Point(85, 180);
+            lblTarget.Location = new Point(89, 220);
             lblTarget.Name = "lblTarget";
             lblTarget.Size = new Size(42, 15);
             lblTarget.TabIndex = 8;
@@ -132,7 +132,7 @@
             // lblLocal
             // 
             lblLocal.AutoSize = true;
-            lblLocal.Location = new Point(85, 228);
+            lblLocal.Location = new Point(89, 257);
             lblLocal.Name = "lblLocal";
             lblLocal.Size = new Size(38, 15);
             lblLocal.TabIndex = 9;
@@ -140,7 +140,7 @@
             // 
             // btnSync
             // 
-            btnSync.Location = new Point(175, 313);
+            btnSync.Location = new Point(175, 331);
             btnSync.Name = "btnSync";
             btnSync.Size = new Size(75, 23);
             btnSync.TabIndex = 10;
@@ -149,7 +149,7 @@
             // 
             // btnAutoSync
             // 
-            btnAutoSync.Location = new Point(378, 313);
+            btnAutoSync.Location = new Point(387, 331);
             btnAutoSync.Name = "btnAutoSync";
             btnAutoSync.Size = new Size(75, 23);
             btnAutoSync.TabIndex = 11;
@@ -159,7 +159,7 @@
             // cmbSyncSelect
             // 
             cmbSyncSelect.FormattingEnabled = true;
-            cmbSyncSelect.Location = new Point(246, 273);
+            cmbSyncSelect.Location = new Point(249, 302);
             cmbSyncSelect.Name = "cmbSyncSelect";
             cmbSyncSelect.Size = new Size(134, 23);
             cmbSyncSelect.TabIndex = 12;
@@ -169,9 +169,11 @@
             txtOutput.FormattingEnabled = true;
             txtOutput.ItemHeight = 15;
             txtOutput.Location = new Point(106, 360);
+            txtOutput.MultiColumn = true;
             txtOutput.Name = "txtOutput";
             txtOutput.Size = new Size(423, 94);
             txtOutput.TabIndex = 13;
+            txtOutput.SelectedIndexChanged += TxtOutput_SelectedIndexChanged;
             // 
             // progressBar1
             // 
@@ -182,67 +184,67 @@
             // 
             // btnBrowseLocal
             // 
-            btnBrowseLocal.Location = new Point(478, 225);
+            btnBrowseLocal.Location = new Point(478, 254);
             btnBrowseLocal.Name = "btnBrowseLocal";
             btnBrowseLocal.Size = new Size(75, 23);
             btnBrowseLocal.TabIndex = 15;
             btnBrowseLocal.Text = "Browse";
             btnBrowseLocal.UseVisualStyleBackColor = true;
-            btnBrowseLocal.Click += btnBrowseLocal_Click;
+            btnBrowseLocal.Click += BtnBrowseLocal_Click;
             // 
             // cmbLocal
             // 
             cmbLocal.FormattingEnabled = true;
-            cmbLocal.Location = new Point(148, 225);
+            cmbLocal.Location = new Point(148, 254);
             cmbLocal.Name = "cmbLocal";
             cmbLocal.Size = new Size(324, 23);
             cmbLocal.TabIndex = 16;
             // 
             // btnConnect
             // 
-            btnConnect.Location = new Point(523, 109);
+            btnConnect.Location = new Point(537, 152);
             btnConnect.Name = "btnConnect";
             btnConnect.Size = new Size(75, 23);
             btnConnect.TabIndex = 17;
             btnConnect.Text = "Connect";
             btnConnect.UseVisualStyleBackColor = true;
-            btnConnect.Click += btnConnect_Click;
+            btnConnect.Click += BtnConnect_Click;
             // 
-            // picCSU
+            // comboBox1
             // 
-            picCSU.Image = Properties.Resources.CSULOGO;
-            picCSU.Location = new Point(12, 12);
-            picCSU.Name = "picCSU";
-            picCSU.Size = new Size(341, 74);
-            picCSU.SizeMode = PictureBoxSizeMode.StretchImage;
-            picCSU.TabIndex = 18;
-            picCSU.TabStop = false;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(148, 216);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(324, 23);
+            comboBox1.TabIndex = 22;
             // 
-            // TreeViewFTP
+            // button1
             // 
-            TreeViewFTP.Location = new Point(148, 138);
-            TreeViewFTP.Name = "TreeViewFTP";
-            TreeViewFTP.Size = new Size(324, 81);
-            TreeViewFTP.TabIndex = 19;
-            TreeViewFTP.AfterSelect += TreeViewFTP_AfterSelect;
+            button1.Location = new Point(478, 216);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 21;
+            button1.Text = "Browse";
+            button1.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // pictureBox1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(102, 300);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(120, 94);
-            listBox1.TabIndex = 20;
+            pictureBox1.Image = Properties.Resources.CSULOGO;
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(161, 106);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 23;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(656, 507);
-            Controls.Add(listBox1);
-            Controls.Add(TreeViewFTP);
-            Controls.Add(picCSU);
+            Controls.Add(pictureBox1);
+            Controls.Add(comboBox1);
+            Controls.Add(button1);
             Controls.Add(btnConnect);
             Controls.Add(cmbLocal);
             Controls.Add(btnBrowseLocal);
@@ -263,7 +265,7 @@
             Controls.Add(InHostIP);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)picCSU).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -288,8 +290,8 @@
         private Button btnBrowseLocal;
         private ComboBox cmbLocal;
         private Button btnConnect;
-        private PictureBox picCSU;
-        private TreeView TreeViewFTP;
-        private ListBox listBox1;
+        private ComboBox comboBox1;
+        private Button button1;
+        private PictureBox pictureBox1;
     }
 }

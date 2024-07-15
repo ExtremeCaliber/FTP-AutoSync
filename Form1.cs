@@ -2,7 +2,13 @@ using System;
 using System.Net;
 using System.Windows.Forms;
 using FluentFTP;
+using System.Threading;
 using System.Threading.Tasks;
+using FluentFTP.Logging;
+using Microsoft.VisualBasic.Logging;
+using FluentFTP.GnuTLS;
+using FluentFTP.GnuTLS.Enums;
+using Microsoft.Extensions.Logging;
 
 namespace FTP_AutoSync
 {
@@ -13,7 +19,9 @@ namespace FTP_AutoSync
             InitializeComponent();
         }
 
-        private void btnBrowseLocal_Click(object sender, EventArgs e)
+
+
+        private void BtnBrowseLocal_Click(object sender, EventArgs e)
         {
             using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
             {
@@ -53,14 +61,14 @@ namespace FTP_AutoSync
             // Handle text change if needed
         }
 
-        private async void btnConnect_Click(object sender, EventArgs e)
+        private void BtnConnect_Click(object sender, EventArgs e)
         {
             string host = InHostIP.Text;
             string user = InUser.Text;
             string pass = InPass.Text;
             string portText = InPort.Text;
 
-            int port = 21; // Default FTP port
+            int port = 2221; // Default FTP port
             if (!string.IsNullOrWhiteSpace(portText) && int.TryParse(portText, out int portNumber))
             {
                 port = portNumber;
@@ -68,11 +76,36 @@ namespace FTP_AutoSync
 
             try
             {
-                var client = new FtpClient(host, user, pass);
+                using var client = new FtpClient(host, user, pass);
 
-                // Set encryption mode to Auto
-                client.Config.EncryptionMode = FtpEncryptionMode.Auto;
 
+
+                client.Config.CustomStream = typeof(GnuTlsStream);
+                client.Config.CustomStreamConfig = new GnuConfig(){
+                    LogLevel = 1,
+                    // sample setting to use the default security suite
+                    SecuritySuite = GnuSuite.Normal,
+
+                    // sample setting to include all TLS protocols except for TLS 1.0 and TLS 1.1
+                    SecurityOptions = new List<GnuOption> {
+                        new GnuOption(GnuOperator.Include, GnuCommand.Protocol_All),
+                        new GnuOption(GnuOperator.Exclude, GnuCommand.Protocol_Tls10),
+                        new GnuOption(GnuOperator.Exclude, GnuCommand.Protocol_Tls11),
+                },
+
+                    // no profile required
+                    SecurityProfile = GnuProfile.None,
+
+                    // sample special flags (this is not normally required)
+                    AdvancedOptions = [
+                        GnuAdvanced.CompatibilityMode
+                    ],
+
+                    HandshakeTimeout = 5000,
+                };
+                // Set encryption mode to Explicit FTPS
+                client.Config.EncryptionMode = FtpEncryptionMode.Explicit;
+                client.Config.ValidateAnyCertificate = true;
                 // Connect to the server
                 client.Connect();
 
@@ -80,12 +113,7 @@ namespace FTP_AutoSync
                 {
                     MessageBox.Show("Connected successfully!");
 
-                    var items = client.GetListing("/");
 
-                    foreach (var item in items)
-                    {
-                        Console.WriteLine($"{item.Type} - {item.FullName}");
-                    }
                 }
                 else
                 {
@@ -104,5 +132,16 @@ namespace FTP_AutoSync
         {
             // Handle tree view node selection if needed
         }
+
+        private void TxtOutput_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        void OnValidateCertificate(FtpClient control, FtpSslValidationEventArgs e)
+        {
+            // add logic to test if certificate is valid here
+            e.Accept = true;
+        }
     }
+
 }
