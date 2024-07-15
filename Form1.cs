@@ -73,7 +73,6 @@ namespace FTP_AutoSync
                 // Set encryption mode to Auto
                 client.Config.EncryptionMode = FtpEncryptionMode.Auto;
 
-
                 // Connect to the server
                 client.Connect();
 
