@@ -1,0 +1,179 @@
+2024-07-22 15:32:02.854 -04:00 [INF] >         Connect(False)
+2024-07-22 15:32:02.937 -04:00 [DBG] FluentFTP 50.1.0.0(.NET 6.0) AsyncFtpClient
+2024-07-22 15:32:03.007 -04:00 [DBG] Connecting(async) AsyncFtpClient.FtpSocketStream(control) IP #1 = 192.168.68.53:1024
+2024-07-22 15:32:03.145 -04:00 [DBG] Waiting for a response
+2024-07-22 15:32:03.196 -04:00 [INF] Response: 220 Service ready for new user. [739088.814d]
+2024-07-22 15:32:03.200 -04:00 [INF] Command:  AUTH TLS
+2024-07-22 15:32:03.202 -04:00 [DBG] Waiting for response to: AUTH TLS
+2024-07-22 15:32:03.210 -04:00 [INF] Response: 234 Command AUTH okay; starting TLS connection. [8ms]
+2024-07-22 15:32:03.281 -04:00 [INF] FTPS authentication successful, lib = .NET SslStream, cipher suite = Tls12 (Aes128, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, 44550, 255) [56ms]
+2024-07-22 15:32:03.282 -04:00 [INF] Command:  USER admin
+2024-07-22 15:32:03.283 -04:00 [DBG] Waiting for response to: USER admin
+2024-07-22 15:32:03.286 -04:00 [INF] Response: 331 User name okay, need password for admin. [3ms]
+2024-07-22 15:32:03.287 -04:00 [INF] Command:  PASS admin
+2024-07-22 15:32:03.287 -04:00 [DBG] Waiting for response to: PASS admin
+2024-07-22 15:32:03.290 -04:00 [INF] Response: 230 User logged in, proceed. [3ms]
+2024-07-22 15:32:03.291 -04:00 [INF] Command:  PBSZ 0
+2024-07-22 15:32:03.291 -04:00 [DBG] Waiting for response to: PBSZ 0
+2024-07-22 15:32:03.294 -04:00 [INF] Response: 200 Command PBSZ okay. [2ms]
+2024-07-22 15:32:03.294 -04:00 [INF] Command:  PROT P
+2024-07-22 15:32:03.294 -04:00 [DBG] Waiting for response to: PROT P
+2024-07-22 15:32:03.297 -04:00 [INF] Response: 200 Command PROT okay. [2ms]
+2024-07-22 15:32:03.298 -04:00 [INF] Command:  FEAT
+2024-07-22 15:32:03.298 -04:00 [DBG] Waiting for response to: FEAT
+2024-07-22 15:32:03.301 -04:00 [DBG] Response: 211-Extensions supported
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+Response: LANG en;zh-tw;ja;is
+Response: MLST Size;Modify;Type;Perm
+Response: AUTH SSL
+Response: AUTH TLS
+Response: MODE Z
+Response: UTF8
+Response: TVFS
+Response: MD5
+Response: MMD5
+Response: MFMT
+2024-07-22 15:32:03.301 -04:00 [INF] Response: 211 End [3ms]
+2024-07-22 15:32:03.303 -04:00 [INF] Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+2024-07-22 15:32:03.303 -04:00 [INF] Command:  OPTS UTF8 ON
+2024-07-22 15:32:03.303 -04:00 [DBG] Waiting for response to: OPTS UTF8 ON
+2024-07-22 15:32:03.306 -04:00 [INF] Response: 200 Command OPTS okay. [3ms]
+2024-07-22 15:32:03.306 -04:00 [INF] Command:  SYST
+2024-07-22 15:32:03.306 -04:00 [DBG] Waiting for response to: SYST
+2024-07-22 15:32:03.310 -04:00 [INF] Response: 215 UNIX Type: Apache FtpServer [3ms]
+2024-07-22 15:32:03.310 -04:00 [INF] Detected FTP server: Apache
+2024-07-22 15:32:03.311 -04:00 [DBG] Active ServerHandler is: Apache
+2024-07-22 15:32:03.311 -04:00 [DBG] Listing parser set to: Machine
+2024-07-22 15:32:03.312 -04:00 [INF] Command:  PWD
+2024-07-22 15:32:03.312 -04:00 [DBG] Waiting for response to: PWD
+2024-07-22 15:32:03.315 -04:00 [INF] Response: 257 "/" is current directory. [3ms]
+2024-07-22 23:12:36.598 -04:00 [INF] >         Connect(False)
+2024-07-22 23:12:36.639 -04:00 [DBG] FluentFTP 50.1.0.0(.NET 6.0) FtpClient
+2024-07-22 23:12:36.655 -04:00 [DBG] Connecting(sync) FtpClient.FtpSocketStream(control) IP #1 = 192.168.68.53:1024
+2024-07-22 23:12:36.692 -04:00 [DBG] Waiting for a response
+2024-07-22 23:12:36.706 -04:00 [INF] Response: 220 Service ready for new user. [739089.134d]
+2024-07-22 23:12:36.709 -04:00 [INF] Command:  AUTH TLS
+2024-07-22 23:12:36.709 -04:00 [DBG] Waiting for response to: AUTH TLS
+2024-07-22 23:12:36.717 -04:00 [INF] Response: 234 Command AUTH okay; starting TLS connection. [8ms]
+2024-07-22 23:12:36.773 -04:00 [INF] FTPS authentication successful, lib = .NET SslStream, cipher suite = Tls12 (Aes128, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, 44550, 255) [54ms]
+2024-07-22 23:12:36.773 -04:00 [INF] Command:  USER admin
+2024-07-22 23:12:36.774 -04:00 [DBG] Waiting for response to: USER admin
+2024-07-22 23:12:36.781 -04:00 [INF] Response: 331 User name okay, need password for admin. [7ms]
+2024-07-22 23:12:36.782 -04:00 [INF] Command:  PASS admin
+2024-07-22 23:12:36.782 -04:00 [DBG] Waiting for response to: PASS admin
+2024-07-22 23:12:36.786 -04:00 [INF] Response: 230 User logged in, proceed. [4ms]
+2024-07-22 23:12:36.787 -04:00 [INF] Command:  PBSZ 0
+2024-07-22 23:12:36.787 -04:00 [DBG] Waiting for response to: PBSZ 0
+2024-07-22 23:12:36.790 -04:00 [INF] Response: 200 Command PBSZ okay. [3ms]
+2024-07-22 23:12:36.790 -04:00 [INF] Command:  PROT P
+2024-07-22 23:12:36.791 -04:00 [DBG] Waiting for response to: PROT P
+2024-07-22 23:12:36.794 -04:00 [INF] Response: 200 Command PROT okay. [3ms]
+2024-07-22 23:12:36.794 -04:00 [INF] Command:  FEAT
+2024-07-22 23:12:36.794 -04:00 [DBG] Waiting for response to: FEAT
+2024-07-22 23:12:36.798 -04:00 [DBG] Response: 211-Extensions supported
+Response: SIZE
+Response: MDTM
+Response: REST STREAM
+Response: LANG en;zh-tw;ja;is
+Response: MLST Size;Modify;Type;Perm
+Response: AUTH SSL
+Response: AUTH TLS
+Response: MODE Z
+Response: UTF8
+Response: TVFS
+Response: MD5
+Response: MMD5
+Response: MFMT
+2024-07-22 23:12:36.798 -04:00 [INF] Response: 211 End [3ms]
+2024-07-22 23:12:36.799 -04:00 [INF] Text encoding: System.Text.UTF8Encoding+UTF8EncodingSealed
+2024-07-22 23:12:36.799 -04:00 [INF] Command:  OPTS UTF8 ON
+2024-07-22 23:12:36.799 -04:00 [DBG] Waiting for response to: OPTS UTF8 ON
+2024-07-22 23:12:36.803 -04:00 [INF] Response: 200 Command OPTS okay. [3ms]
+2024-07-22 23:12:36.803 -04:00 [INF] Command:  SYST
+2024-07-22 23:12:36.803 -04:00 [DBG] Waiting for response to: SYST
+2024-07-22 23:12:36.806 -04:00 [INF] Response: 215 UNIX Type: Apache FtpServer [3ms]
+2024-07-22 23:12:36.807 -04:00 [INF] Detected FTP server: Apache
+2024-07-22 23:12:36.807 -04:00 [DBG] Active ServerHandler is: Apache
+2024-07-22 23:12:36.808 -04:00 [DBG] Listing parser set to: Machine
+2024-07-22 23:12:36.808 -04:00 [INF] Command:  PWD
+2024-07-22 23:12:36.808 -04:00 [DBG] Waiting for response to: PWD
+2024-07-22 23:12:36.813 -04:00 [INF] Response: 257 "/" is current directory. [4ms]
+2024-07-22 23:12:48.826 -04:00 [INF] >         GetListing(null, Auto)
+2024-07-22 23:12:48.827 -04:00 [INF] Command:  TYPE I
+2024-07-22 23:12:48.827 -04:00 [DBG] Waiting for response to: TYPE I
+2024-07-22 23:12:48.834 -04:00 [INF] Response: 200 Command TYPE okay. [6ms]
+2024-07-22 23:12:48.835 -04:00 [INF] >         OpenDataStream("MLSD /", 0)
+2024-07-22 23:12:48.836 -04:00 [INF] >         OpenPassiveDataStream(AutoPassive, "MLSD /", 0)
+2024-07-22 23:12:48.836 -04:00 [INF] Command:  EPSV
+2024-07-22 23:12:48.836 -04:00 [DBG] Waiting for response to: EPSV
+2024-07-22 23:12:48.841 -04:00 [INF] Response: 229 Entering Passive Mode (|||37461|) [5ms]
+2024-07-22 23:12:48.844 -04:00 [DBG] Connecting(sync) FtpClient.FtpSocketStream(data) IP #1 = 192.168.68.53:37461
+2024-07-22 23:12:48.849 -04:00 [INF] Command:  MLSD /
+2024-07-22 23:12:48.849 -04:00 [DBG] Waiting for response to: MLSD /
+2024-07-22 23:12:48.852 -04:00 [INF] Response: 150 File status okay; about to open data connection. [3ms]
+2024-07-22 23:12:48.863 -04:00 [INF] FTPS authentication successful, lib = .NET SslStream, cipher suite = Tls12 (Aes128, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, 44550, 255) [10ms]
+2024-07-22 23:12:48.863 -04:00 [DBG] +---------------------------------------+
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222134.000;Type=dir; Alarms
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222144.000;Type=dir; Android
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230209223910.000;Type=dir; AudioRecorder
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222134.000;Type=dir; Audiobooks
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230519134202.000;Type=dir; DCIM
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222134.000;Type=dir; Documents
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20240215041639.000;Type=dir; Download
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20231102134432.000;Type=dir; LaunchBox
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20240118062416.000;Type=dir; Movies
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=262144;Modify=20240722103747.000;Type=dir; Music
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222134.000;Type=dir; Notifications
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222134.000;Type=dir; Pictures
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222134.000;Type=dir; Podcasts
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222134.000;Type=dir; Recordings
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222134.000;Type=dir; Ringtones
+2024-07-22 23:12:49.387 -04:00 [DBG] Listing:  Size=131072;Modify=20231226155225.000;Type=dir; Roms
+2024-07-22 23:12:49.388 -04:00 [DBG] Listing:  Size=131072;Modify=20230513222425.000;Type=dir; System Volume Information
+2024-07-22 23:12:49.388 -04:00 [DBG] -----------------------------------------
+2024-07-22 23:12:49.388 -04:00 [DBG] Disposing(sync) FtpClient.FtpSocketStream(data)
+2024-07-22 23:12:49.390 -04:00 [INF] >         CloseDataStream()
+2024-07-22 23:12:49.391 -04:00 [DBG] Waiting for response to: MLSD /
+2024-07-22 23:12:49.391 -04:00 [INF] Response: 226 Closing data connection. [541ms]
+2024-07-22 23:12:54.010 -04:00 [INF] >         GetListing("/DCIM", Auto)
+2024-07-22 23:12:54.010 -04:00 [INF] >         OpenDataStream("MLSD /DCIM", 0)
+2024-07-22 23:12:54.011 -04:00 [INF] >         OpenPassiveDataStream(AutoPassive, "MLSD /DCIM", 0)
+2024-07-22 23:12:54.011 -04:00 [INF] Command:  EPSV
+2024-07-22 23:12:54.011 -04:00 [DBG] Waiting for response to: EPSV
+2024-07-22 23:12:54.017 -04:00 [INF] Response: 229 Entering Passive Mode (|||44717|) [6ms]
+2024-07-22 23:12:54.017 -04:00 [DBG] Connecting(sync) FtpClient.FtpSocketStream(data) IP #1 = 192.168.68.53:44717
+2024-07-22 23:12:54.021 -04:00 [INF] Command:  MLSD /DCIM
+2024-07-22 23:12:54.021 -04:00 [DBG] Waiting for response to: MLSD /DCIM
+2024-07-22 23:12:54.025 -04:00 [INF] Response: 150 File status okay; about to open data connection. [3ms]
+2024-07-22 23:12:54.029 -04:00 [INF] FTPS authentication successful, lib = .NET SslStream, cipher suite = Tls12 (Aes128, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, 44550, 255) [3ms]
+2024-07-22 23:12:54.029 -04:00 [DBG] +---------------------------------------+
+2024-07-22 23:12:54.064 -04:00 [DBG] Listing:  Size=131072;Modify=20230519134203.000;Type=dir; Album 1
+2024-07-22 23:12:54.064 -04:00 [DBG] Listing:  Size=131072;Modify=20231016091845.000;Type=dir; Camera
+2024-07-22 23:12:54.064 -04:00 [DBG] -----------------------------------------
+2024-07-22 23:12:54.064 -04:00 [DBG] Disposing(sync) FtpClient.FtpSocketStream(data)
+2024-07-22 23:12:54.064 -04:00 [INF] >         CloseDataStream()
+2024-07-22 23:12:54.064 -04:00 [DBG] Waiting for response to: MLSD /DCIM
+2024-07-22 23:12:54.078 -04:00 [INF] Response: 226 Closing data connection. [56ms]
+2024-07-22 23:12:56.287 -04:00 [INF] >         GetListing("/Android", Auto)
+2024-07-22 23:12:56.287 -04:00 [INF] >         OpenDataStream("MLSD /Android", 0)
+2024-07-22 23:12:56.287 -04:00 [INF] >         OpenPassiveDataStream(AutoPassive, "MLSD /Android", 0)
+2024-07-22 23:12:56.287 -04:00 [INF] Command:  EPSV
+2024-07-22 23:12:56.287 -04:00 [DBG] Waiting for response to: EPSV
+2024-07-22 23:12:56.296 -04:00 [INF] Response: 229 Entering Passive Mode (|||34079|) [8ms]
+2024-07-22 23:12:56.296 -04:00 [DBG] Connecting(sync) FtpClient.FtpSocketStream(data) IP #1 = 192.168.68.53:34079
+2024-07-22 23:12:56.300 -04:00 [INF] Command:  MLSD /Android
+2024-07-22 23:12:56.300 -04:00 [DBG] Waiting for response to: MLSD /Android
+2024-07-22 23:12:56.304 -04:00 [INF] Response: 150 File status okay; about to open data connection. [4ms]
+2024-07-22 23:12:56.307 -04:00 [INF] FTPS authentication successful, lib = .NET SslStream, cipher suite = Tls12 (Aes128, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, 44550, 255) [2ms]
+2024-07-22 23:12:56.307 -04:00 [DBG] +---------------------------------------+
+2024-07-22 23:12:56.346 -04:00 [DBG] Listing:  Size=131072;Modify=20231228005801.000;Type=dir; .Trash
+2024-07-22 23:12:56.346 -04:00 [DBG] Listing:  Size=131072;Modify=20240708213314.000;Type=dir; data
+2024-07-22 23:12:56.346 -04:00 [DBG] Listing:  Size=131072;Modify=20240524143555.000;Type=dir; media
+2024-07-22 23:12:56.346 -04:00 [DBG] Listing:  Size=131072;Modify=20240526131433.000;Type=dir; obb
+2024-07-22 23:12:56.346 -04:00 [DBG] -----------------------------------------
+2024-07-22 23:12:56.346 -04:00 [DBG] Disposing(sync) FtpClient.FtpSocketStream(data)
+2024-07-22 23:12:56.346 -04:00 [INF] >         CloseDataStream()
+2024-07-22 23:12:56.346 -04:00 [DBG] Waiting for response to: MLSD /Android
+2024-07-22 23:12:56.361 -04:00 [INF] Response: 226 Closing data connection. [60ms]

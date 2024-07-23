@@ -20,9 +20,6 @@ C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.c
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FluentFTP.dll
 C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP Auto.793FBC34.Up2Date
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FluentFTP.Logging.dll
-C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
-C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
@@ -36,4 +33,46 @@ C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libnettle-8.dl
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libwinpthread-1.dll
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FluentFTP.GnuTLS.dll
 C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Serilog.dll
-C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Serilog.Sinks.Console.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Serilog.Extensions.Logging.dll
+C:\Users\excal\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Serilog.Sinks.File.dll
+C:\Users\excal\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.BrowseServerForm.resources
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.csproj.AssemblyReference.cache
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.BrowseServerForm.resources
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.Form1.resources
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP_AutoSync.Properties.Resources.resources
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.csproj.GenerateResource.cache
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.AssemblyInfoInputs.cache
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.AssemblyInfo.cs
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.csproj.CoreCompileInputs.cache
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.sourcelink.json
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\refint\FTP AutoSync.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.pdb
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.exe
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libgcc_s_seh-1.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libgmp-10.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libgnutls-30.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libhogweed-6.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libnettle-8.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\libwinpthread-1.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.deps.json
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.runtimeconfig.json
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FTP AutoSync.pdb
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FluentFTP.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FluentFTP.GnuTLS.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\FluentFTP.Logging.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Serilog.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Serilog.Extensions.Logging.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\bin\Debug\net8.0-windows\Serilog.Sinks.File.dll
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP Auto.793FBC34.Up2Date
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\FTP AutoSync.genruntimeconfig.cache
+C:\Users\excal\OneDrive\Documents\source\repos\FTP AutoSync\obj\Debug\net8.0-windows\ref\FTP AutoSync.dll

@@ -8,12 +8,17 @@ using FluentFTP.Logging;
 using Microsoft.VisualBasic.Logging;
 using FluentFTP.GnuTLS;
 using FluentFTP.GnuTLS.Enums;
-using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Extensions.Logging;
+using Serilog.Sinks.File;
+using FluentFTP.Client.BaseClient;
 
 namespace FTP_AutoSync
 {
     public partial class Form1 : Form
     {
+        private FtpClient client;
+
         public Form1()
         {
             InitializeComponent();
@@ -68,49 +73,42 @@ namespace FTP_AutoSync
             string pass = InPass.Text;
             string portText = InPort.Text;
 
-            int port = 2221; // Default FTP port
-            if (!string.IsNullOrWhiteSpace(portText) && int.TryParse(portText, out int portNumber))
-            {
-                port = portNumber;
-            }
-
             try
             {
-                using FtpClient client = new FtpClient(host, user, pass);
+                if (client != null && client.IsConnected)
+                {
+                    client.Disconnect();
+                }
+
+                client = new FtpClient(host, user, pass);
+                if (!string.IsNullOrWhiteSpace(portText) && int.TryParse(portText, out int portNumber))
+                {
+                    client.Port = portNumber;
+                }
+                else
+                {
+                    client.Port = 21;
+                }
                 // create Serilog logger
                 var serilogLogger = new LoggerConfiguration()
                     .MinimumLevel.Debug()
                     .WriteTo.File("logs/FluentFTPLogs.txt", rollingInterval: RollingInterval.Day)
                     .CreateLogger();
 
+                // wrap with MELA ILogger
+                var microsoftLogger = new SerilogLoggerFactory(serilogLogger)
+                    .CreateLogger("FTP");
 
-                client.Config.CustomStream = typeof(GnuTlsStream);
-                client.Config.CustomStreamConfig = new GnuConfig(){
-                    LogLevel = 1,
-                    // sample setting to use the default security suite
-                    SecuritySuite = GnuSuite.Normal,
+                // wrap with FtpLogAdapter
+                client.Logger = new FtpLogAdapter(microsoftLogger);
+                client.Config.LogUserName = true;
+                client.Config.LogPassword = true;
+                client.Config.LogHost = true;
 
-                    // sample setting to include all TLS protocols except for TLS 1.0 and TLS 1.1
-                    SecurityOptions = new List<GnuOption> {
-                        new GnuOption(GnuOperator.Include, GnuCommand.Protocol_All),
-                        new GnuOption(GnuOperator.Exclude, GnuCommand.Protocol_Tls10),
-                        new GnuOption(GnuOperator.Exclude, GnuCommand.Protocol_Tls11),
-                },
+                // Encryption and Certificate Validation
+                client.Config.EncryptionMode = FtpEncryptionMode.Auto;
+                client.ValidateCertificate += new FtpSslValidation(OnValidateCertificate);
 
-                    // no profile required
-                    SecurityProfile = GnuProfile.None,
-
-                    // sample special flags (this is not normally required)
-                    AdvancedOptions = [
-                        GnuAdvanced.CompatibilityMode
-                    ],
-
-                    HandshakeTimeout = 5000,
-                };
-                // Set encryption mode to Explicit FTPS
-                client.Config.EncryptionMode = FtpEncryptionMode.Explicit;
-                client.Config.ValidateAnyCertificate = true;
-                // Connect to the server
                 client.Connect();
 
                 if (client.IsConnected)
@@ -141,11 +139,47 @@ namespace FTP_AutoSync
         {
 
         }
-        void OnValidateCertificate(FtpClient control, FtpSslValidationEventArgs e)
+        private static void OnValidateCertificate(BaseFtpClient control, FtpSslValidationEventArgs e)
         {
-            // add logic to test if certificate is valid here
-            e.Accept = true;
+            if (e.PolicyErrors != System.Net.Security.SslPolicyErrors.None)
+            {
+                // invalid cert, do you want to accept it?
+                e.Accept = true;
+            }
+            else
+            {
+                e.Accept = true;
+            }
+        }
+
+        private void btnBrowseServer_Click(object sender, EventArgs e)
+        {
+            // Check if the client is null or not connected
+            if (client == null || !client.IsConnected)
+            {
+                MessageBox.Show("Please connect to the FTP server first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Pass the connected client to the BrowseServerForm
+            using (var browseForm = new BrowseServerForm(client))
+            {
+                browseForm.PopulateTreeView();
+                if (browseForm.ShowDialog() == DialogResult.OK)
+                {
+                    string selectedPath = browseForm.SelectedPath;
+                    if (!cmbServer.Items.Contains(selectedPath))
+                    {
+                        cmbServer.Items.Add(selectedPath);
+                    }
+                    cmbServer.SelectedItem = selectedPath;
+                }
+            }
+        }
+
+        private void cmbServer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
-
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\excal\\source\\repos\\FTP AutoSync\\FTP AutoSync.csproj": {}
+    "C:\\Users\\excal\\OneDrive\\Documents\\source\\repos\\FTP AutoSync\\FTP AutoSync.csproj": {}
   },
   "projects": {
-    "C:\\Users\\excal\\source\\repos\\FTP AutoSync\\FTP AutoSync.csproj": {
+    "C:\\Users\\excal\\OneDrive\\Documents\\source\\repos\\FTP AutoSync\\FTP AutoSync.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\excal\\source\\repos\\FTP AutoSync\\FTP AutoSync.csproj",
+        "projectUniqueName": "C:\\Users\\excal\\OneDrive\\Documents\\source\\repos\\FTP AutoSync\\FTP AutoSync.csproj",
         "projectName": "FTP AutoSync",
-        "projectPath": "C:\\Users\\excal\\source\\repos\\FTP AutoSync\\FTP AutoSync.csproj",
+        "projectPath": "C:\\Users\\excal\\OneDrive\\Documents\\source\\repos\\FTP AutoSync\\FTP AutoSync.csproj",
         "packagesPath": "C:\\Users\\excal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\excal\\source\\repos\\FTP AutoSync\\obj\\",
+        "outputPath": "C:\\Users\\excal\\OneDrive\\Documents\\source\\repos\\FTP AutoSync\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\excal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,11 @@
               "target": "Package",
               "version": "[4.0.0, )"
             },
-            "Serilog.Sinks.Console": {
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[6.0.0, )"
             }
@@ -85,7 +89,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

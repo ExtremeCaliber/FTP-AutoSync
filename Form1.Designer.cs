@@ -46,8 +46,8 @@
             btnBrowseLocal = new Button();
             cmbLocal = new ComboBox();
             btnConnect = new Button();
-            comboBox1 = new ComboBox();
-            button1 = new Button();
+            cmbServer = new ComboBox();
+            btnBrowseServer = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -210,22 +210,24 @@
             btnConnect.UseVisualStyleBackColor = true;
             btnConnect.Click += BtnConnect_Click;
             // 
-            // comboBox1
+            // cmbServer
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(148, 216);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(324, 23);
-            comboBox1.TabIndex = 22;
+            cmbServer.FormattingEnabled = true;
+            cmbServer.Location = new Point(148, 216);
+            cmbServer.Name = "cmbServer";
+            cmbServer.Size = new Size(324, 23);
+            cmbServer.TabIndex = 22;
+            cmbServer.SelectedIndexChanged += cmbServer_SelectedIndexChanged;
             // 
-            // button1
+            // btnBrowseServer
             // 
-            button1.Location = new Point(478, 216);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 21;
-            button1.Text = "Browse";
-            button1.UseVisualStyleBackColor = true;
+            btnBrowseServer.Location = new Point(478, 216);
+            btnBrowseServer.Name = "btnBrowseServer";
+            btnBrowseServer.Size = new Size(75, 23);
+            btnBrowseServer.TabIndex = 21;
+            btnBrowseServer.Text = "Browse";
+            btnBrowseServer.UseVisualStyleBackColor = true;
+            btnBrowseServer.Click += btnBrowseServer_Click;
             // 
             // pictureBox1
             // 
@@ -243,8 +245,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(656, 507);
             Controls.Add(pictureBox1);
-            Controls.Add(comboBox1);
-            Controls.Add(button1);
+            Controls.Add(cmbServer);
+            Controls.Add(btnBrowseServer);
             Controls.Add(btnConnect);
             Controls.Add(cmbLocal);
             Controls.Add(btnBrowseLocal);
@@ -290,8 +292,8 @@
         private Button btnBrowseLocal;
         private ComboBox cmbLocal;
         private Button btnConnect;
-        private ComboBox comboBox1;
-        private Button button1;
+        private ComboBox cmbServer;
+        private Button btnBrowseServer;
         private PictureBox pictureBox1;
     }
 }

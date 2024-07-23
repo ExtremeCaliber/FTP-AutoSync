@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FTP AutoSync")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dcb3346679e930b892fd3bb10393b70dc1c2959")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+146640730c374374c4f6bb055a9bb598514c7ae3")]
 [assembly: System.Reflection.AssemblyProductAttribute("FTP AutoSync")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FTP AutoSync")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
